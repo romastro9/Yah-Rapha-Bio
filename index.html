@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal bio link page for Yah Rapha.">
+    <meta name="author" content="Yah Rapha">
+    <title>Yah Rapha - Bio Link</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e7d8c9; /* Soft beige color */
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transform: translateY(30px);
+            animation: slideUp 1s ease-out; /* Slide-up animation */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .hero-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            animation: bounceIn 1s ease-out; /* Bounce-in animation for profile image */
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            60% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #3b3a45;
+            animation: fadeInText 1.5s ease-in-out; /* Text fade-in animation */
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+            color: #777;
+            margin-bottom: 20px;
+            animation: fadeInText 2s ease-in-out; /* Fade-in animation for paragraph */
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+            animation: fadeInText 2s ease-in-out; /* Social links fade-in */
+        }
+
+        .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: #bfaea0; /* Beige background for buttons */
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-links a:hover {
+            background-color: #a29082; /* Darker beige on hover */
+            transform: translateY(-5px); /* Lift-up effect on hover */
+        }
+
+        .social-links a i {
+            margin-right: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            animation: fadeInText 2s ease-in-out; /* Contact info fade-in */
+        }
+
+        .contact-info a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            background-color: #d5ad87; /* Muted goldish color */
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info a:hover {
+            background-color: #b88c6d; /* Darker shade of goldish */
+            transform: translateY(-5px); /* Lift-up effect on hover */
+        }
+
+        .contact-info a i {
+            margin-right: 10px;
+        }
+
+        footer {
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        footer a {
+            color: #bfaea0; /* Beige color for footer links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #a29082; /* Darker beige for footer links on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Profile Picture -->
+    <img src="https://scontent.fpnh11-1.fna.fbcdn.net/v/t39.30808-6/472748250_122223630890028166_5602874585480394994_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=ETitbQG5y3QQ7kNvgE0J3H1&_nc_oc=Adk8yTv5WE__0QJNVAocL5rb6t8dJW0kGiPrmMI6QTh5TtXIVzpM6Q3kmmF0H6B3g8w&_nc_zt=23&_nc_ht=scontent.fpnh11-1.fna&_nc_gid=6Du1Jx2LUvIqP1fwhlFHLA&oh=00_AYEpSGaJREenoYXJQXhPEOOSPjfNrLS7OCubcB5qLQAjzQ&oe=67E6DBE9" alt="Yah Rapha" class="hero-image">
+    
+    <!-- Name -->
+    <h1>Yah Rapha Wellness Center </h1>
+    
+    <!-- Bio / Description -->
+    <p>Welcome to YahRapha Wellness Center 
+        link page. Connect with me through the links below:</p>
+    
+    <!-- Social Media Links -->
+    <div class="social-links">
+        <a href="https://t.me/Yahrapha" target="_blank"><i class="fab fa-telegram"></i>Telegram Chat </a>
+        <a href="https://t.me/Yahrapha" target="_blank"><i class="fab fa-telegram"></i>Telegram channel  </a>
+        <a href="https://www.facebook.com/profile.php?id=61550845002500" target="_blank"><i class="fab fa-facebook"></i>Facebook Page </a>
+        <a href="https://www.tiktok.com/@yah.rapha" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
+        <a href="https://www.instagram.com/yahraphawellness?igsh=MWZlemNtaTM5NDVoMQ==" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <a href="tel:+855010552088"><i class="fas fa-phone-alt"></i>Call: 010552088</a>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Visit us on <a href="https://maps.app.goo.gl/nE7Qb6buQ8hrbNX86" target="_blank">Google Maps</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
