@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal bio link page for Yah Rapha.">
+    <meta name="description" content="Personal bio link page for Yah Rapha Wellness Center.">
     <meta name="author" content="Yah Rapha">
     <title>Yah Rapha - Bio Link</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * {
@@ -16,16 +16,17 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Poppins', 'Battambang', sans-serif;
             background-color: #e7d8c9; /* Soft beige color */
             color: #333;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             text-align: center;
-            animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+            animation: fadeIn 1.5s ease-in-out;
+            padding: 20px;
         }
 
         .container {
@@ -36,220 +37,230 @@
             border-radius: 15px;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
-            transform: translateY(30px);
-            animation: slideUp 1s ease-out; /* Slide-up animation */
+            transform: translateY(20px);
+            animation: slideUp 0.8s ease-out forwards;
+            position: relative;
+        }
+
+        /* Language Selector Styles */
+        .lang-selector {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            animation: fadeInText 1.5s ease-in-out;
+        }
+
+        .lang-btn {
+            background-color: transparent;
+            border: 1px solid #bfaea0;
+            color: #bfaea0;
+            padding: 5px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-family: 'Poppins', 'Battambang', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn.active, .lang-btn:hover {
+            background-color: #bfaea0;
+            color: #fff;
         }
 
         @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         @keyframes slideUp {
-            0% {
-                transform: translateY(30px);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
+            0% { transform: translateY(30px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
         }
 
         .hero-image {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             object-fit: cover;
-            animation: bounceIn 1s ease-out; /* Bounce-in animation for profile image */
+            animation: bounceIn 1s ease-out;
         }
 
         @keyframes bounceIn {
-            0% {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-            60% {
-                transform: scale(1.2);
-            }
-            100% {
-                transform: scale(1);
-                opacity: 1;
-            }
+            0% { transform: scale(0.8); opacity: 0; }
+            60% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-bottom: 10px;
             color: #3b3a45;
-            animation: fadeInText 1.5s ease-in-out; /* Text fade-in animation */
+            animation: fadeInText 1.5s ease-in-out;
+        }
+
+        p.bio-desc {
+            font-size: 0.95rem;
+            color: #777;
+            margin-bottom: 25px;
+            line-height: 1.5;
+            animation: fadeInText 2s ease-in-out;
         }
 
         @keyframes fadeInText {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-
-        p {
-            font-size: 1rem;
-            color: #777;
-            margin-bottom: 20px;
-            animation: fadeInText 2s ease-in-out; /* Fade-in animation for paragraph */
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
 
         .social-links {
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            margin-bottom: 30px;
-            animation: fadeInText 2s ease-in-out; /* Social links fade-in */
+            gap: 12px;
+            margin-bottom: 25px;
+            animation: fadeInText 2s ease-in-out;
         }
 
-        .social-links a {
+        .social-links a, .contact-info a {
             display: flex;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            background-color: #bfaea0; /* Beige background for buttons */
             color: white;
             padding: 12px;
             border-radius: 8px;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             transition: background-color 0.3s ease, transform 0.3s ease;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .social-links a:hover {
-            background-color: #a29082; /* Darker beige on hover */
-            transform: translateY(-5px); /* Lift-up effect on hover */
-        }
+        .social-links a { background-color: #bfaea0; }
+        .social-links a:hover { background-color: #a29082; transform: translateY(-3px); }
+        
+        .contact-info a { background-color: #d5ad87; }
+        .contact-info a:hover { background-color: #b88c6d; transform: translateY(-3px); }
 
-        .social-links a i {
+        .social-links a i, .contact-info a i {
             margin-right: 10px;
-        }
-
-        .contact-info {
-            margin-bottom: 20px;
-            animation: fadeInText 2s ease-in-out; /* Contact info fade-in */
-        }
-
-        .contact-info a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            background-color: #d5ad87; /* Muted goldish color */
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
             font-size: 1.2rem;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info a:hover {
-            background-color: #b88c6d; /* Darker shade of goldish */
-            transform: translateY(-5px); /* Lift-up effect on hover */
-        }
-
-        .contact-info a i {
-            margin-right: 10px;
         }
 
         footer {
             font-size: 0.9rem;
             color: #777;
+            margin-top: 10px;
         }
 
         footer a {
-            color: #bfaea0; /* Beige color for footer links */
+            color: #bfaea0;
             text-decoration: none;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
 
-        footer a:hover {
-            color: #a29082; /* Darker beige for footer links on hover */
-        }
+        footer a:hover { color: #a29082; }
 
         /* Responsive Styles */
-        @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .hero-image {
-                width: 80px;
-                height: 80px;
-            }
-
-            .social-links a, .contact-info a {
-                font-size: 1rem;
-                padding: 10px;
-            }
-        }
-
         @media screen and (max-width: 480px) {
-            h1 {
-                font-size: 1.8rem;
-            }
-
-            .hero-image {
-                width: 70px;
-                height: 70px;
-            }
-
-            .container {
-                padding: 20px;
-            }
-
-            .social-links a, .contact-info a {
-                font-size: 0.9rem;
-                padding: 8px;
-            }
+            .container { padding: 20px; }
+            h1 { font-size: 1.6rem; }
+            .hero-image { width: 80px; height: 80px; }
+            .social-links a, .contact-info a { font-size: 1rem; padding: 10px; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-<!-- Profile Picture -->
-    <img src="yah rapha.png" alt="Yah Rapha" class="hero-image">
     
-    <!-- Name -->
-    <h1>Yah Rapha Wellness Center</h1>
-    
-    <!-- Bio / Description -->
-    <p>Welcome to YahRapha Wellness Center link page. Connect with me through the links below:</p>
-    
-    <!-- Social Media Links -->
-    <div class="social-links">
-        <a href="https://t.me/Yahrapha" target="_blank"><i class="fab fa-telegram"></i>Telegram Chat </a>
-        <a href="https://t.me/yahrahpha" target="_blank"><i class="fab fa-telegram"></i>Telegram channel </a>
-        <a href="https://www.facebook.com/profile.php?id=61550845002500" target="_blank"><i class="fab fa-facebook"></i>Facebook Page </a>
-        <a href="https://www.tiktok.com/@yah.rapha" target="_blank"><i class="fab fa-tiktok"></i>TikTok</a>
-        <a href="https://www.instagram.com/yahraphawellness?igsh=MWZlemNtaTM5NDVoMQ==" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-        <a href="https://www.xiaohongshu.com/user/profile/660fbddd000000000303363a?xsec_token=YB1nH7ZSO9Z8W5yJYlCFm66f2GzaQOvQ9mScr8j3hzWJ8%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=660fbddd000000000303363a&apptime=1742799235&share_id=b155e27acffd40f0a87e8f589ff36742&share_channel=copy_link" target="_blank"><i class="fa fa-book"></i>Xiao Hong Shu</a> <!-- Xiao Hong Shu link with book icon -->
+    <div class="lang-selector">
+        <button class="lang-btn active" onclick="setLanguage('en')" id="btn-en">English</button>
+        <button class="lang-btn" onclick="setLanguage('km')" id="btn-km">ខ្មែរ</button>
+        <button class="lang-btn" onclick="setLanguage('zh')" id="btn-zh">中文</button>
     </div>
 
-    <!-- Contact Information -->
+    <img src="yah rapha.png" alt="Yah Rapha Wellness Center" class="hero-image">
+    
+    <h1 id="title">Yah Rapha Wellness Center</h1>
+    
+    <p class="bio-desc" id="desc">Welcome to Yah Rapha Wellness Center link page. Connect with us through the links below:</p>
+    
+    <div class="social-links">
+        <a href="https://t.me/Yahrapha" target="_blank"><i class="fab fa-telegram"></i><span id="tg-chat">Telegram Chat</span></a>
+        <a href="https://t.me/yahrahpha" target="_blank"><i class="fab fa-telegram"></i><span id="tg-chan">Telegram Channel</span></a>
+        <a href="https://www.facebook.com/profile.php?id=61550845002500" target="_blank"><i class="fab fa-facebook"></i><span id="fb">Facebook Page</span></a>
+        <a href="https://www.tiktok.com/@yah.rapha" target="_blank"><i class="fab fa-tiktok"></i><span id="tiktok">TikTok</span></a>
+        <a href="https://www.instagram.com/yahraphawellness?igsh=MWZlemNtaTM5NDVoMQ==" target="_blank"><i class="fab fa-instagram"></i><span id="ig">Instagram</span></a>
+        <a href="https://www.xiaohongshu.com/user/profile/660fbddd000000000303363a?xsec_token=YB1nH7ZSO9Z8W5yJYlCFm66f2GzaQOvQ9mScr8j3hzWJ8%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=660fbddd000000000303363a&apptime=1742799235&share_id=b155e27acffd40f0a87e8f589ff36742&share_channel=copy_link" target="_blank"><i class="fa fa-book"></i><span id="xhs">Xiao Hong Shu</span></a>
+    </div>
+
     <div class="contact-info">
-        <a href="tel:+855010552088"><i class="fas fa-phone-alt"></i>Call: 010552088</a>
+        <a href="tel:+855010552088"><i class="fas fa-phone-alt"></i><span id="call">Call: 010552088</span></a>
     </div>
     
-    <!-- Footer -->
     <footer>
-        <p>Visit us on <a href="https://maps.app.goo.gl/nE7Qb6buQ8hrbNX86" target="_blank">Google Maps</a></p>
+        <p><span id="visit">Visit us on</span> <a href="https://maps.app.goo.gl/SDYVW5kAucR6pdXp7?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></p>
     </footer>
 </div>
+
+<script>
+    const translations = {
+        en: {
+            title: "Yah Rapha Wellness Center",
+            desc: "Welcome to Yah Rapha Wellness Center link page. Connect with us through the links below:",
+            tgChat: "Telegram Chat",
+            tgChan: "Telegram Channel",
+            fb: "Facebook Page",
+            tiktok: "TikTok",
+            ig: "Instagram",
+            xhs: "Xiao Hong Shu",
+            call: "Call: 010552088",
+            visit: "Visit us on"
+        },
+        km: {
+            title: "មជ្ឈមណ្ឌលថែរក្សាសុខភាព យ៉ារ៉ាហ្វា",
+            desc: "សូមស្វាគមន៍មកកាន់ទំព័រតំណភ្ជាប់របស់យើង។ ភ្ជាប់ទំនាក់ទំនងជាមួយយើងតាមរយៈតំណភ្ជាប់ខាងក្រោម៖",
+            tgChat: "តេឡេក្រាម (ជជែក)",
+            tgChan: "ឆានែលតេឡេក្រាម",
+            fb: "ទំព័រហ្វេសប៊ុក",
+            tiktok: "TikTok",
+            ig: "Instagram",
+            xhs: "Xiao Hong Shu (សៀវភៅក្រហមតូច)",
+            call: "ទូរស័ព្ទ៖ 010552088",
+            visit: "ស្វែងរកយើងនៅលើ"
+        },
+        zh: {
+            title: "雅拉法健康中心",
+            desc: "欢迎来到雅拉法健康中心链接页面。请通过以下链接与我们联系：",
+            tgChat: "Telegram 聊天",
+            tgChan: "Telegram 频道",
+            fb: "Facebook 主页",
+            tiktok: "TikTok",
+            ig: "Instagram",
+            xhs: "小红书",
+            call: "拨打电话: 010552088",
+            visit: "在"
+        }
+    };
+
+    function setLanguage(lang) {
+        // Update Text
+        document.getElementById('title').textContent = translations[lang].title;
+        document.getElementById('desc').textContent = translations[lang].desc;
+        document.getElementById('tg-chat').textContent = translations[lang].tgChat;
+        document.getElementById('tg-chan').textContent = translations[lang].tgChan;
+        document.getElementById('fb').textContent = translations[lang].fb;
+        document.getElementById('tiktok').textContent = translations[lang].tiktok;
+        document.getElementById('ig').textContent = translations[lang].ig;
+        document.getElementById('xhs').textContent = translations[lang].xhs;
+        document.getElementById('call').textContent = translations[lang].call;
+        document.getElementById('visit').textContent = translations[lang].visit;
+
+        // Update Active Button styling
+        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        document.getElementById('btn-' + lang).classList.add('active');
+    }
+</script>
 
 </body>
 </html>
