@@ -1,266 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal bio link page for Yah Rapha Wellness Center.">
-    <meta name="author" content="Yah Rapha">
-    <title>Yah Rapha - Bio Link</title>
-    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', 'Battambang', sans-serif;
-            background-color: #e7d8c9; /* Soft beige color */
-            color: #333;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
-            padding: 20px;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 450px;
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transform: translateY(20px);
-            animation: slideUp 0.8s ease-out forwards;
-            position: relative;
-        }
-
-        /* Language Selector Styles */
-        .lang-selector {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-bottom: 20px;
-            animation: fadeInText 1.5s ease-in-out;
-        }
-
-        .lang-btn {
-            background-color: transparent;
-            border: 1px solid #bfaea0;
-            color: #bfaea0;
-            padding: 5px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-family: 'Poppins', 'Battambang', sans-serif;
-            transition: all 0.3s ease;
-        }
-
-        .lang-btn.active, .lang-btn:hover {
-            background-color: #bfaea0;
-            color: #fff;
-        }
-
-        @keyframes fadeIn {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        @keyframes slideUp {
-            0% { transform: translateY(30px); opacity: 0; }
-            100% { transform: translateY(0); opacity: 1; }
-        }
-
-        .hero-image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-            object-fit: cover;
-            animation: bounceIn 1s ease-out;
-        }
-
-        @keyframes bounceIn {
-            0% { transform: scale(0.8); opacity: 0; }
-            60% { transform: scale(1.1); }
-            100% { transform: scale(1); opacity: 1; }
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            color: #3b3a45;
-            animation: fadeInText 1.5s ease-in-out;
-        }
-
-        p.bio-desc {
-            font-size: 0.95rem;
-            color: #777;
-            margin-bottom: 25px;
-            line-height: 1.5;
-            animation: fadeInText 2s ease-in-out;
-        }
-
-        @keyframes fadeInText {
-            0% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-
-        .social-links {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-bottom: 25px;
-            animation: fadeInText 2s ease-in-out;
-        }
-
-        .social-links a, .contact-info a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .social-links a { background-color: #bfaea0; }
-        .social-links a:hover { background-color: #a29082; transform: translateY(-3px); }
-        
-        .contact-info a { background-color: #d5ad87; }
-        .contact-info a:hover { background-color: #b88c6d; transform: translateY(-3px); }
-
-        .social-links a i, .contact-info a i {
-            margin-right: 10px;
-            font-size: 1.2rem;
-        }
-
-        footer {
-            font-size: 0.9rem;
-            color: #777;
-            margin-top: 10px;
-        }
-
-        footer a {
-            color: #bfaea0;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s ease;
-        }
-
-        footer a:hover { color: #a29082; }
-
-        /* Responsive Styles */
-        @media screen and (max-width: 480px) {
-            .container { padding: 20px; }
-            h1 { font-size: 1.6rem; }
-            .hero-image { width: 80px; height: 80px; }
-            .social-links a, .contact-info a { font-size: 1rem; padding: 10px; }
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Yahrapha X Master Care</title>
+<meta name="description" content="Premium bio link page for Yahrapha X Master Care" />
+<meta name="theme-color" content="#080604" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{--bg:#080604;--gold:#c49333;--gold2:#f5d486;--gold3:#6e4710;--cream:#fff7e9;--muted:#c8b79f;--line:rgba(245,212,134,.28);--glass:rgba(20,15,10,.72);--shadow:0 30px 90px rgba(0,0,0,.55)}
+*{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+body{min-height:100vh;font-family:'Poppins','Kantumruy Pro',sans-serif;color:var(--cream);background:radial-gradient(circle at 12% 8%,rgba(245,212,134,.23),transparent 26%),radial-gradient(circle at 88% 18%,rgba(196,147,51,.23),transparent 30%),radial-gradient(circle at 50% 100%,rgba(110,71,16,.36),transparent 34%),linear-gradient(145deg,#050403 0%,#15100b 42%,#090604 100%);overflow-x:hidden;padding:26px 14px;display:flex;align-items:center;justify-content:center}
+.bg-grid{position:fixed;inset:0;pointer-events:none;opacity:.32;background-image:linear-gradient(rgba(245,212,134,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(245,212,134,.07) 1px,transparent 1px);background-size:46px 46px;mask-image:radial-gradient(circle,#000 20%,transparent 78%)}
+.wrap{width:min(480px,100%);position:relative;z-index:2}.card{position:relative;border:1px solid var(--line);border-radius:34px;padding:24px 20px 18px;background:linear-gradient(180deg,rgba(24,18,12,.86),rgba(8,6,4,.90));box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.08);overflow:hidden}.card:before{content:"";position:absolute;inset:0;border-radius:34px;padding:1px;background:linear-gradient(135deg,transparent,rgba(245,212,134,.75),transparent 58%,rgba(196,147,51,.45));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.shine{position:absolute;top:-35%;left:-50%;width:70%;height:170%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.11),transparent);transform:rotate(22deg);animation:shine 5.5s ease-in-out infinite}@keyframes shine{0%,55%{left:-70%}100%{left:120%}}
+.lang{display:flex;justify-content:center;gap:8px;margin-bottom:16px;position:relative;z-index:2}.lang button{border:1px solid rgba(245,212,134,.42);background:rgba(255,255,255,.04);color:var(--muted);padding:8px 16px;border-radius:999px;font:700 13px 'Poppins','Kantumruy Pro';cursor:pointer;transition:.25s}.lang button.active,.lang button:hover{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#18100a;box-shadow:0 10px 26px rgba(196,147,51,.22)}
+.logoBox{width:150px;height:150px;margin:2px auto 12px;border-radius:50%;display:flex;align-items:center;justify-content:center;position:relative;background:radial-gradient(circle at 35% 25%,rgba(245,212,134,.35),rgba(196,147,51,.08) 48%,rgba(0,0,0,.35) 72%);border:1px solid rgba(245,212,134,.42);box-shadow:0 18px 45px rgba(0,0,0,.45),inset 0 0 0 10px rgba(255,255,255,.025)}.logoBox:after{content:"";position:absolute;inset:9px;border:1px solid rgba(245,212,134,.26);border-radius:50%}.logoSvg{width:112px;height:112px;filter:drop-shadow(0 10px 20px rgba(0,0,0,.35))}.brand{text-align:center;margin-bottom:14px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(245,212,134,.32);padding:7px 12px;border-radius:999px;color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;background:rgba(196,147,51,.08)}h1{font-family:'Playfair Display','Kantumruy Pro',serif;font-size:35px;line-height:1.08;margin:13px 0 8px;background:linear-gradient(180deg,#fff4d5 0%,#d6a64d 48%,#8a5b17 100%);-webkit-background-clip:text;background-clip:text;color:transparent}.subtitle{color:var(--muted);font-size:14.5px;line-height:1.65;max-width:380px;margin:auto}.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0 13px}.mini{color:var(--cream);text-decoration:none;border:1px solid rgba(245,212,134,.25);background:rgba(255,255,255,.045);border-radius:18px;padding:12px 10px;display:flex;align-items:center;justify-content:center;gap:9px;font-weight:800;font-size:13px;transition:.25s}.mini:hover,.link:hover{transform:translateY(-2px);border-color:rgba(245,212,134,.62);box-shadow:0 16px 30px rgba(0,0,0,.26)}.links{display:flex;flex-direction:column;gap:11px}.link{position:relative;display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--cream);padding:14px;border-radius:20px;border:1px solid rgba(245,212,134,.23);background:linear-gradient(135deg,rgba(255,255,255,.065),rgba(255,255,255,.025));transition:.25s;overflow:hidden}.link:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:linear-gradient(var(--gold2),var(--gold3))}.ico{width:42px;height:42px;border-radius:15px;display:grid;place-items:center;flex:0 0 42px;color:#1a1008;background:linear-gradient(135deg,var(--gold2),var(--gold));box-shadow:0 10px 20px rgba(196,147,51,.20)}.txt{flex:1;min-width:0}.txt b{display:block;font-size:15px;line-height:1.25}.txt span{display:block;color:var(--muted);font-size:12px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.arrow{color:rgba(245,212,134,.76)}.premium{background:linear-gradient(135deg,rgba(245,212,134,.20),rgba(196,147,51,.05));border-color:rgba(245,212,134,.52)}.footer{text-align:center;color:rgba(255,247,233,.58);font-size:12px;margin-top:16px}.footer b{color:var(--gold2)}
+@media(max-width:420px){body{padding:14px 10px}.card{border-radius:28px;padding:20px 14px 16px}h1{font-size:29px}.subtitle{font-size:13.5px}.logoBox{width:128px;height:128px}.logoSvg{width:96px;height:96px}.quick{grid-template-columns:1fr}.link{padding:12px}.lang button{padding:7px 12px}}
+</style>
 </head>
 <body>
-
-<div class="container">
-    
-    <div class="lang-selector">
-        <button class="lang-btn active" onclick="setLanguage('en')" id="btn-en">English</button>
-        <button class="lang-btn" onclick="setLanguage('km')" id="btn-km">ខ្មែរ</button>
-        <button class="lang-btn" onclick="setLanguage('zh')" id="btn-zh">中文</button>
-    </div>
-
-    <img src="yah rapha.png" alt="Yah Rapha Wellness Center" class="hero-image">
-    
-    <h1 id="title">Yah Rapha Wellness Center</h1>
-    
-    <p class="bio-desc" id="desc">Welcome to Yah Rapha Wellness Center link page. Connect with us through the links below:</p>
-    
-    <div class="social-links">
-        <a href="https://t.me/Yahrapha" target="_blank"><i class="fab fa-telegram"></i><span id="tg-chat">Telegram Chat</span></a>
-        <a href="https://t.me/yahrahpha" target="_blank"><i class="fab fa-telegram"></i><span id="tg-chan">Telegram Channel</span></a>
-        <a href="https://www.facebook.com/profile.php?id=61550845002500" target="_blank"><i class="fab fa-facebook"></i><span id="fb">Facebook Page</span></a>
-        <a href="https://www.tiktok.com/@yah.rapha" target="_blank"><i class="fab fa-tiktok"></i><span id="tiktok">TikTok</span></a>
-        <a href="https://www.instagram.com/yahraphawellness?igsh=MWZlemNtaTM5NDVoMQ==" target="_blank"><i class="fab fa-instagram"></i><span id="ig">Instagram</span></a>
-        <a href="https://www.xiaohongshu.com/user/profile/660fbddd000000000303363a?xsec_token=YB1nH7ZSO9Z8W5yJYlCFm66f2GzaQOvQ9mScr8j3hzWJ8%3D&xsec_source=app_share&xhsshare=CopyLink&appuid=660fbddd000000000303363a&apptime=1742799235&share_id=b155e27acffd40f0a87e8f589ff36742&share_channel=copy_link" target="_blank"><i class="fa fa-book"></i><span id="xhs">Xiao Hong Shu</span></a>
-    </div>
-
-    <div class="contact-info">
-        <a href="tel:+855010552088"><i class="fas fa-phone-alt"></i><span id="call">Call: 010552088</span></a>
-    </div>
-    
-    <footer>
-        <p><span id="visit">Visit us on</span> <a href="https://maps.app.goo.gl/SDYVW5kAucR6pdXp7?g_st=com.google.maps.preview.copy" target="_blank">Google Maps</a></p>
-    </footer>
+<div class="bg-grid"></div>
+<main class="wrap">
+<section class="card">
+<div class="shine"></div>
+<div class="lang">
+<button class="active" onclick="setLang('en')" id="btn-en">English</button>
+<button onclick="setLang('km')" id="btn-km">ខ្មែរ</button>
+<button onclick="setLang('zh')" id="btn-zh">中文</button>
 </div>
-
+<div class="logoBox" aria-label="MasterCare logo">
+<svg class="logoSvg" viewBox="0 0 200 200" role="img" aria-label="MasterCare MC Mark">
+<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f7d990"/><stop offset=".45" stop-color="#c49333"/><stop offset="1" stop-color="#73501a"/></linearGradient></defs>
+<path d="M36 150V42h24l41 54 40-54h23v108h-25V82l-38 50h-2L61 82v68H36z" fill="url(#g)"/>
+<path d="M164 118c-9 23-31 39-57 39-35 0-63-26-63-59s28-59 63-59c25 0 47 15 57 37l-22 9c-6-13-19-22-35-22-21 0-38 15-38 35s17 35 38 35c16 0 30-9 36-24l21 9z" fill="url(#g)" opacity=".94"/>
+<path d="M52 31c28-16 68-16 96 0" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/><path d="M76 28l7 12 13-8 8 13 11-13 13 8 6-12" fill="none" stroke="url(#g)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="brand">
+<div class="eyebrow"><i class="fa-solid fa-crown"></i><span id="eyebrow">Premium Beauty & Wellness</span></div>
+<h1 id="title">Yahrapha X Master Care</h1>
+<p class="subtitle" id="desc">Official premium link page. Connect with our clinics, Telegram, Facebook pages and location.</p>
+</div>
+<div class="quick">
+<a class="mini premium" href="tel:+85561355370"><i class="fa-solid fa-phone-volume"></i><span id="call1">Call 061 355 370</span></a>
+<a class="mini premium" href="tel:+85510552088"><i class="fa-solid fa-phone"></i><span id="call2">Call 010 552 088</span></a>
+</div>
+<div class="links">
+<a class="link premium" href="https://t.me/Yahrapha" target="_blank"><div class="ico"><i class="fa-brands fa-telegram"></i></div><div class="txt"><b id="telegram">Telegram Chat</b><span>t.me/Yahrapha</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+<a class="link" href="https://t.me/mastercare1990s" target="_blank"><div class="ico"><i class="fa-brands fa-telegram"></i></div><div class="txt"><b id="channel">Telegram Channel</b><span>t.me/mastercare1990s</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+<a class="link" href="https://maps.app.goo.gl/SDYVW5kAucR6pdXp7?g_st=com.google.maps.preview.copy" target="_blank"><div class="ico"><i class="fa-solid fa-location-dot"></i></div><div class="txt"><b id="location">Google Maps Location</b><span>Yahrapha X Master Care</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+<a class="link" href="https://www.facebook.com/mastercarecambodia1" target="_blank"><div class="ico"><i class="fa-brands fa-facebook-f"></i></div><div class="txt"><b>Borey Chhun Mastercare</b><span>facebook.com/mastercarecambodia1</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+<a class="link" href="https://www.facebook.com/mastercarepreahyukunthor" target="_blank"><div class="ico"><i class="fa-brands fa-facebook-f"></i></div><div class="txt"><b>MasterCare Premium</b><span>facebook.com/mastercarepreahyukunthor</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+<a class="link" href="https://www.facebook.com/mastercare1990ss" target="_blank"><div class="ico"><i class="fa-solid fa-hair"></i></div><div class="txt"><b>MasterCare Hair Clinic ព្យាបាលសក់</b><span>facebook.com/mastercare1990ss</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+<a class="link" href="https://www.facebook.com/mastercarecambodia" target="_blank"><div class="ico"><i class="fa-brands fa-facebook-f"></i></div><div class="txt"><b>MasterCare Cambodia</b><span>facebook.com/mastercarecambodia</span></div><i class="fa-solid fa-arrow-up-right-from-square arrow"></i></a>
+</div>
+<div class="footer">© <b>Yahrapha X Master Care</b> · Premium Bio Link</div>
+</section>
+</main>
 <script>
-    const translations = {
-        en: {
-            title: "Yah Rapha Wellness Center",
-            desc: "Welcome to Yah Rapha Wellness Center link page. Connect with us through the links below:",
-            tgChat: "Telegram Chat",
-            tgChan: "Telegram Channel",
-            fb: "Facebook Page",
-            tiktok: "TikTok",
-            ig: "Instagram",
-            xhs: "Xiao Hong Shu",
-            call: "Call: 010552088",
-            visit: "Visit us on"
-        },
-        km: {
-            title: "មជ្ឈមណ្ឌលថែរក្សាសុខភាព យ៉ារ៉ាហ្វា",
-            desc: "សូមស្វាគមន៍មកកាន់ទំព័រតំណភ្ជាប់របស់យើង។ ភ្ជាប់ទំនាក់ទំនងជាមួយយើងតាមរយៈតំណភ្ជាប់ខាងក្រោម៖",
-            tgChat: "តេឡេក្រាម (ជជែក)",
-            tgChan: "ឆានែលតេឡេក្រាម",
-            fb: "ទំព័រហ្វេសប៊ុក",
-            tiktok: "TikTok",
-            ig: "Instagram",
-            xhs: "Xiao Hong Shu (សៀវភៅក្រហមតូច)",
-            call: "ទូរស័ព្ទ៖ 010552088",
-            visit: "ស្វែងរកយើងនៅលើ"
-        },
-        zh: {
-            title: "雅拉法健康中心",
-            desc: "欢迎来到雅拉法健康中心链接页面。请通过以下链接与我们联系：",
-            tgChat: "Telegram 聊天",
-            tgChan: "Telegram 频道",
-            fb: "Facebook 主页",
-            tiktok: "TikTok",
-            ig: "Instagram",
-            xhs: "小红书",
-            call: "拨打电话: 010552088",
-            visit: "在"
-        }
-    };
-
-    function setLanguage(lang) {
-        // Update Text
-        document.getElementById('title').textContent = translations[lang].title;
-        document.getElementById('desc').textContent = translations[lang].desc;
-        document.getElementById('tg-chat').textContent = translations[lang].tgChat;
-        document.getElementById('tg-chan').textContent = translations[lang].tgChan;
-        document.getElementById('fb').textContent = translations[lang].fb;
-        document.getElementById('tiktok').textContent = translations[lang].tiktok;
-        document.getElementById('ig').textContent = translations[lang].ig;
-        document.getElementById('xhs').textContent = translations[lang].xhs;
-        document.getElementById('call').textContent = translations[lang].call;
-        document.getElementById('visit').textContent = translations[lang].visit;
-
-        // Update Active Button styling
-        document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-        document.getElementById('btn-' + lang).classList.add('active');
-    }
+const t={en:{eyebrow:'Premium Beauty & Wellness',title:'Yahrapha X Master Care',desc:'Official premium link page. Connect with our clinics, Telegram, Facebook pages and location.',call1:'Call 061 355 370',call2:'Call 010 552 088',telegram:'Telegram Chat',channel:'Telegram Channel',location:'Google Maps Location'},km:{eyebrow:'សម្រស់ និងសុខភាព Premium',title:'Yahrapha X Master Care',desc:'ទំព័រផ្លូវការសម្រាប់តំណភ្ជាប់ ទំនាក់ទំនង គ្លីនិក ហ្វេសប៊ុក តេឡេក្រាម និងទីតាំង។',call1:'ទូរស័ព្ទ 061 355 370',call2:'ទូរស័ព្ទ 010 552 088',telegram:'Telegram សម្រាប់ទំនាក់ទំនង',channel:'Telegram Channel',location:'ទីតាំង Google Maps'},zh:{eyebrow:'高级美容与健康',title:'Yahrapha X Master Care',desc:'官方高级链接页面。可连接诊所、Telegram、Facebook 页面和位置。',call1:'拨打 061 355 370',call2:'拨打 010 552 088',telegram:'Telegram 聊天',channel:'Telegram 频道',location:'Google 地图位置'}};
+function setLang(l){Object.keys(t[l]).forEach(k=>{const e=document.getElementById(k);if(e)e.textContent=t[l][k]});document.querySelectorAll('.lang button').forEach(b=>b.classList.remove('active'));document.getElementById('btn-'+l).classList.add('active');document.documentElement.lang=l}
 </script>
-
 </body>
 </html>
